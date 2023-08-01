@@ -1,3 +1,5 @@
+import MainNav from "@/components/navbar";
+
 interface SiteLayoutProps {
   children: React.ReactNode;
 }
@@ -5,7 +7,9 @@ interface SiteLayoutProps {
 export default function SiteLayout({ children }: SiteLayoutProps) {
   return (
     <>
-      <header>Site Layout</header>
+      <header>
+        <MainNav />
+      </header>
       <main>{children}</main>
     </>
   );
