@@ -6,11 +6,11 @@ interface SiteLayoutProps {
 
 export default function SiteLayout({ children }: SiteLayoutProps) {
   return (
-    <div className="p-4">
+    <section className="py-4 md:py-6 px-5 md:px-10">
       <header>
         <MainNav />
       </header>
       <main>{children}</main>
-    </div>
+    </section>
   );
 }
