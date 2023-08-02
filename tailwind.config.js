@@ -8,13 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "neutral-light-grey": "hsla(0, 0%, 96%, 1)",
-        "neutral-dark-grey": "hsla(0, 0%, 47%, 1)",
-        "neutral-grey": "hsla(0, 0%, 87%, 1)",
+        "light-grey": "hsla(0, 0%, 96%, 1)",
+        "dark-grey": "hsla(0, 0%, 47%, 1)",
+        "main-grey": "hsla(0, 0%, 87%, 1)",
         "main-pink": "hsla(18, 100%, 81%, 1)",
+        "main-pink-lighter": "hsla(18, 100%, 81%, 0.7)",
         "main-black": "hsla(0, 0%, 28%, 1)",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
